@@ -1,0 +1,48 @@
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+footer a:hover {
+    color: lightgreen;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.list-group-item {
+    background-color: #3c833c;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.summary {
+    background-color: #deffde;
+    color: black;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+.summary {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+
+.summary.show {
+    max-height: 500px;
+    transition: max-height 1.5s ease-in;
+}
